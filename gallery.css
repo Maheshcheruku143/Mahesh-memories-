@@ -1,5 +1,5 @@
 .gallery{
-    display:grid;
+    display:rows;
     grid-template-rows:repeat(5,1fr);
     gap:15px;
     padding:20px;
