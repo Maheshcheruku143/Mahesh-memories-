@@ -1,44 +1,44 @@
 .gallery{
-    display:rows;
-    grid-template-rows:repeat(5,1fr);
+    width:95%;
+    margin:20px auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
     gap:15px;
-    padding:20px;
 }
 
 .photo-card{
-    width:10%;
-    height:30px;
+    background:#222;
+    border-radius:10px;
     overflow:hidden;
-    background: yellow;
 }
 
 .photo-card img{
-    width:10%;
-    height:30px;
-    object-fit:cover;
+    width:100%;
+    height:250px;      /* Anni images same height */
+    object-fit:cover;  /* Image crop ayi same size lo kanipisthundi */
     display:block;
 }
 
 .caption{
-    height:10px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:10px;
-    color: yellow;
-    background:block;
+    text-align:center;
+    padding:10px;
+    color:white;
+    background:#111;
+    font-size:15px;
 }
 
-/* Tablet */
-@media (max-width:92px){
+@media(max-width:900px){
     .gallery{
         grid-template-columns:repeat(3,1fr);
     }
 }
 
-/* Mobile */
-@media (max-width:600px){
+@media(max-width:600px){
     .gallery{
         grid-template-columns:repeat(2,1fr);
+    }
+
+    .photo-card img{
+        height:180px;
     }
 }
