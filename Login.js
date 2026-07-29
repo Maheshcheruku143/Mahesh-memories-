@@ -14,6 +14,9 @@ window.location.href="gallery.html";
 else{
 
 alert("Wrong Username or Password");
+  function login() {
+    alert("Login button clicked");
+  }
 
 }
 
