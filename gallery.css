@@ -1,6 +1,6 @@
 .gallery{
     display:grid;
-    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:repeat(5,1fr);
     gap:15px;
     padding:20px;
 }
@@ -8,10 +8,8 @@
 .photo-card{
     width:10%;
     height:30px;
-    border-radius:5px;
     overflow:hidden;
     background: yellow;
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
 }
 
 .photo-card img{
